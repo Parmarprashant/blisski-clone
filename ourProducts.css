@@ -1,0 +1,543 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.top-bar {
+    background-color: #f5f5f5;
+    padding: 10px 20px;
+    overflow: hidden;
+}
+
+.announcement-container {
+    float: left;
+    width: 50%;
+    overflow: hidden;
+    position: relative;
+}
+
+.announcement {
+    font-size: 14px;
+    color: #333;
+    white-space: nowrap;
+    animation: slide 10s linear infinite;
+}
+
+ @keyframes slide {
+    from {
+        transform: translateX(80%);
+    }
+    to {
+        transform: translateX(-60%);
+    }
+}
+
+
+.contact-info {
+    float: right;
+    width: 50%;
+    text-align: right;
+}
+
+.phone, .email {
+    margin-left: 20px;
+    font-size: 12px;
+    color: #333;
+}
+
+.phone img, .email img {
+    width: 12px;
+    height: 12px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.header {
+    background-color: #b30000;
+    padding: 15px 0;
+    clear: both;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.logo {
+    float: left;
+    width: 20%;
+}
+
+.logo img {
+    width: 150px;
+    height: auto;
+}
+
+.nav {
+    float: left;
+    width: 55%;
+    padding-top: 20px;
+}
+
+.menu {
+    list-style: none;
+    text-align: center;
+}
+
+.menu li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.menu li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 5px 10px;
+}
+
+#a1 {
+    border-bottom: 2px solid white;
+}
+
+.menu li a:hover {
+    border-bottom: 2px solid white;
+}
+
+.dealer-btn {
+    float: right;
+    width: 20%;
+    padding-top: 15px;
+    text-align: right;
+}
+
+.dealer-btn a {
+    background-color: white;
+    color: #b30000;
+    padding: 12px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.dealer-btn a img {
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.dealer-btn a:hover {
+    background-color: #f0f0f0;
+}
+
+.scooters-gallery {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Gallery image - Full width responsive image */
+.gallery-image {
+  width: 100%;
+  height: auto;
+  max-height: 500px;
+  object-fit: cover;
+  display: block;
+}
+
+/* Responsive design for tablets and small devices */
+@media (max-width: 768px) {
+  .gallery-image {
+    max-height: 350px;
+  }
+}
+
+/* Responsive design for mobile devices */
+@media (max-width: 480px) {
+  .header-stripe {
+    height: 10px;
+  }
+
+  .gallery-image {
+    max-height: 250px;
+  }
+}
+.products-container {
+  width: 100%;
+  background-color: #FFFFFF;
+  padding: 40px 20px;
+  margin: 0;
+}
+
+/* Page title heading */
+.page-title {
+  text-align: center;
+  font-size: 32px;
+  font-weight: bold;
+  color: #C41E3A;
+  margin: 0 0 50px 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Products grid layout */
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+/* Individual product card */
+.product-card {
+  background-color: #F5F5F5;
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect for product cards */
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Product image wrapper */
+.product-image-wrapper {
+  width: 100%;
+  height: 200px;
+  background-color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+/* Product image styling */
+.product-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* Product information section */
+.product-info {
+  padding: 20px;
+  background-color: #F5F5F5;
+}
+
+/* Product name styling */
+.product-name {
+  font-size: 18px;
+  font-weight: bold;
+  color: #C41E3A;
+  margin: 0 0 15px 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Learn More button styling */
+.learn-btn {
+  background-color: #333333;
+  color: #FFFFFF;
+  border: none;
+  padding: 10px 25px;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-family: Arial, sans-serif;
+}
+
+/* Button hover effect */
+.learn-btn:hover {
+  background-color: #555555;
+}
+
+/* Button active state */
+.learn-btn:active {
+  background-color: #222222;
+}
+
+/* Responsive design for tablets (3 columns) */
+@media (max-width: 1024px) {
+  .products-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+  }
+
+  .page-title {
+    font-size: 28px;
+    margin-bottom: 40px;
+  }
+}
+
+/* Responsive design for small tablets (2 columns) */
+@media (max-width: 768px) {
+  .products-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .page-title {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+
+  .product-image-wrapper {
+    height: 150px;
+  }
+
+  .products-container {
+    padding: 30px 15px;
+  }
+}
+
+/* Responsive design for mobile devices (1 column) */
+@media (max-width: 480px) {
+  .products-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .page-title {
+    font-size: 20px;
+    margin-bottom: 25px;
+  }
+
+  .product-image-wrapper {
+    height: 120px;
+  }
+
+  .product-info {
+    padding: 15px;
+  }
+
+  .product-name {
+    font-size: 16px;
+  }
+
+  .learn-btn {
+    font-size: 12px;
+    padding: 8px 20px;
+  }
+
+  .products-container {
+    padding: 20px 10px;
+  }
+}
+.footer-section {
+    background-color: #2C2C2C;
+    background-image: url('http://blixescooters.com/wp-content/uploads/2023/04/blix-scooters-footer-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: overlay;
+    position: relative;
+}
+
+.footer-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.85);
+}
+
+.footer-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 60px 20px 40px;
+    display: flex;
+    gap: 60px;
+    position: relative;
+    z-index: 1;
+}
+
+.footer-column {
+    flex: 1;
+}
+
+.footer-logo {
+    width: 150px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.footer-description {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+.footer-heading {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    margin-bottom: 15px;
+}
+
+.footer-links a {
+    color: rgba(255, 255, 255, 0.9);
+    text-decoration: none;
+    font-size: 15px;
+    transition: color 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.footer-links a:hover {
+    color: #8B0000;
+}
+
+.footer-contact {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-contact li {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 15px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    display: flex;
+    gap: 12px;
+}
+
+.contact-icon {
+    flex-shrink: 0;
+    font-size: 18px;
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 25px 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.copyright-text {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 14px;
+    margin: 0;
+}
+
+.copyright-text strong {
+    color: white;
+}
+
+.whatsapp-btn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 60px;
+    height: 60px;
+    background-color: #25D366;
+    border: none;
+    border-radius: 50%;
+    font-size: 32px;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    transition: transform 0.3s ease;
+}
+
+.whatsapp-btn:hover {
+    transform: scale(1.1);
+}
+
+.scroll-top-btn {
+    position: fixed;
+    bottom: 100px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    background-color: #666666;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+}
+
+.scroll-top-btn:hover {
+    background-color: #8B0000;
+}
+
+@media (max-width: 992px) {
+    .footer-container {
+        flex-direction: column;
+        gap: 40px;
+        padding: 50px 20px 30px;
+    }
+}
+
+@media (max-width: 576px) {
+    .footer-container {
+        padding: 40px 15px 25px;
+    }
+    
+    .footer-heading {
+        font-size: 20px;
+    }
+    
+    .footer-description,
+    .footer-links a,
+    .footer-contact li {
+        font-size: 14px;
+    }
+    
+    .copyright-text {
+        font-size: 12px;
+    }
+    
+    .whatsapp-btn {
+        width: 50px;
+        height: 50px;
+        font-size: 28px;
+        bottom: 20px;
+        right: 20px;
+    }
+    
+    .scroll-top-btn {
+        width: 45px;
+        height: 45px;
+        font-size: 20px;
+        bottom: 80px;
+        right: 20px;
+    }
+}
